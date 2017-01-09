@@ -19,7 +19,9 @@ services:
       - NODE_ENV=testing
       - API_INTERVAL=120000
       - API_URL=http://dataref.cnn.com/breaking_news/domestic.json
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.devx
     command: ['npm', 'run', 'unit:watch']
     user: root
     volumes:
