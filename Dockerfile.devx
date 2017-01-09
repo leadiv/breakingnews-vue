@@ -1,0 +1,9 @@
+FROM leadiv/breakingnews-vue:latest
+MAINTAINER Paul Borrego <paul.borrego@turner.com>
+
+ENV HOME=/home/app
+ENV APP=$HOME/breakingnews-vue
+
+# Bring up the development environment
+USER app
+CMD ["npm", "run", "dev"]
