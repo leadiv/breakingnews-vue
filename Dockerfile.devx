@@ -1,4 +1,4 @@
-FROM leadiv/breakingnews-vue:latest
+FROM leadiv/breakingnews-vue:develop
 MAINTAINER Paul Borrego <paul.borrego@turner.com>
 
 ENV HOME=/home/app
