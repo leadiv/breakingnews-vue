@@ -1,5 +1,5 @@
 FROM node:7.3.0
-MAINTAINER Paul Borrego <paul.borrego@turner.com>
+MAINTAINER Paul Borrego <leadiv@gmail.com>
 
 # Set up non root user to run install and build
 RUN useradd --user-group --create-home --shell /bin/false app
@@ -27,9 +27,5 @@ RUN npm install
 USER root
 COPY . $APP
 RUN chown -R app:app $HOME/*
-
-# Build the library
-USER app
-RUN npm run build
 
 CMD ["bash"]
