@@ -1,6 +1,6 @@
 {
   "name": "breakingnews-vue",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "CNN Breaking News component written in vue.js",
   "author": "Paul Borrego <paul.borrego@turner.com>",
   "private": true,
