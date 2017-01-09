@@ -1,7 +1,6 @@
-# CNN Breaking News Component
+# Breaking News Component
 
-This is a breaking news banner written as a vue component. The object is
-to see how the component system works in vue js.
+This is a breaking news banner written as a vue component.
 
 ## Prerequisites
 

@@ -18,7 +18,7 @@ export default {
     props: {
         api: {
             type: String,
-            default: 'http://data.cnn.com/breaking_news/domestic.json',
+            required: true,
         },
         interval: {
             type: Number,
