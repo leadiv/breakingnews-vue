@@ -28,8 +28,4 @@ USER root
 COPY . $APP
 RUN chown -R app:app $HOME/*
 
-# Build the library
-USER app
-RUN npm run build
-
 CMD ["bash"]
