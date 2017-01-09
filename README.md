@@ -13,15 +13,14 @@ Must have [Docker Compose](https://docs.docker.com/compose/) installed.
 $ docker-compose up --build
 ```
 
-Then navigate to http://localhost.cnn.com:8080.
+Then navigate to http://localhost:8080.
 
 ## Environment Variables
 There are two important environment variables for this component.
 
 ### `API_URL`
-The URL to ping to find the breaking news banner information. It
-defaults to production (http://data.cnn.com/breaking_news/domestic.json)
-if not set.
+The URL to ping to find the breaking news banner information. See
+/static/api.mock.json for an example of what the format.
 
 ### `API_INTERVAL`
 How often to ping the breaking new banner `API_URL`. It defaults to 2
