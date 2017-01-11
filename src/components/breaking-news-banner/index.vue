@@ -14,7 +14,7 @@ import BreakingNews from '../breaking-news';
 import FetchData from '../fetch-data';
 
 export default {
-    name: 'app',
+    name: 'breaking-news-banner',
     props: {
         api: {
             type: String,
