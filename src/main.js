@@ -1,13 +1,28 @@
-import Vue from 'vue';
-import App from './components/app';
+/* global window global */
+import BreakingNewsBanner from './components/breaking-news-banner';
 
-const props = {
-    api: process.env.API_URL,
-    interval: parseInt(process.env.API_INTERVAL, 10),
+// Install the components
+export function install(Vue) {
+    Vue.component('breaking-news-banner', BreakingNewsBanner);
+}
+
+// Expose the components
+export {
+    BreakingNewsBanner,
 };
 
-/* eslint-disable no-new */
-new Vue({
-    el: '#app-goes-here',
-    render: h => h(App, { props }),
-});
+// Plugin
+const plugin = {
+    install,
+};
+
+// Auto-install
+const GlobalVue = (typeof window !== 'undefined' && window.Vue) ||
+                  (typeof global !== 'undefined' && global.Vue) ||
+                  null;
+
+if (GlobalVue) {
+    GlobalVue.use(plugin);
+}
+
+export default plugin;
