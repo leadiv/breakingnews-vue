@@ -3,9 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>breakingnews-vue</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- built files will be auto injected -->
   </head>
   <body>
-    <div id="app-goes-here"></div>
-    <!-- built files will be auto injected -->
+    <div id="mount">
+      <breaking-news-banner api="/static/api.mock.json"></breaking-news-banner>
+    </div>
+    <script>
+      new Vue({
+        el: '#mount'
+      });
+    </script>
   </body>
 </html>
